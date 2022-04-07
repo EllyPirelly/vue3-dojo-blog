@@ -2,7 +2,11 @@
 
 ## What is this about?
 
-TODO: composition API
+TODO:
+- very basic use of composition API
+- template refs
+- use of refs to have reactive variables
+- `ref()` vs `reactive()` and why `ref()` will be used for the rest of the project
 ### Branches
 
 ToDo if applicable

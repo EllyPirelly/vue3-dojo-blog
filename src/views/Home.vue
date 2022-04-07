@@ -1,34 +1,56 @@
 <template>
-  <div class="home">Helloooo</div>
-  <p ref="para">My name is {{ name }} and my age is {{ age }}</p>
-  <button @click="handleClick">click meeee</button>
-  <button @click="age++">Click me to see me age</button>
-  <input type="text" v-model="name" />
+  <div class="home">
+    <h1>Home</h1>
+
+    <h2>Refs</h2>
+    <p>
+      {{ ninjaOne.name }} - {{ ninjaOne.age }} - with ref: {{ nameOne.name }}
+    </p>
+    <button @click="updateNinjaOne">update ninja one</button>
+
+    <h2>Reactive</h2>
+    <p>
+      {{ ninjaTwo.name }} - {{ ninjaTwo.age }} - with reactive: {{ nameTwo }}
+    </p>
+    <button @click="updateNinjaTwo">update ninja two</button>
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 
 export default {
   name: 'Home',
 
   setup() {
-    /* by default, are not reactive variables:
-    let name = 'mario'
-    let age = 30 */
+    /* ref versus reactive */
+    const ninjaOne = ref({ name: 'mario', age: 30 })
+    const ninjaTwo = reactive({ name: 'luigi', age: 42 })
 
-    const name = ref('mario')
-    const age = ref(30)
+    const nameOne = ref({ name: 'mario' })
+    /* we can't use primitive values with reactive() */
+    let nameTwo = reactive('luigi')
 
-    const handleClick = () => {
-      name.value = 'luigi'
-      age.value = 42
+    const updateNinjaOne = () => {
+      ninjaOne.value.name = 'Marianne'
+      ninjaOne.value.age = 2200
+      nameOne.value.name = 'Mary'
+    }
+
+    const updateNinjaTwo = () => {
+      ninjaTwo.name = 'Luanne'
+      ninjaTwo.age = 3200
+      /* won't work because it's a primitive value and not reactive */
+      nameTwo = 'LuAnne'
     }
 
     return {
-      name: name,
-      age: age,
-      handleClick,
+      ninjaOne,
+      updateNinjaOne,
+      ninjaTwo,
+      updateNinjaTwo,
+      nameOne,
+      nameTwo,
     }
   },
 }
