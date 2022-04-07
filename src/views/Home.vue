@@ -2,6 +2,8 @@
   <div class="home">Helloooo</div>
   <p ref="para">My name is {{ name }} and my age is {{ age }}</p>
   <button @click="handleClick">click meeee</button>
+  <button @click="age++">Click me to see me age</button>
+  <input type="text" v-model="name" />
 </template>
 
 <script>
@@ -11,25 +13,22 @@ export default {
   name: 'Home',
 
   setup() {
-    console.log(this)
-
-    const para = ref(null)
-    console.log('after declare: ', para, para.value) // still has the value of null!
-
+    /* by default, are not reactive variables:
     let name = 'mario'
-    let age = 30
+    let age = 30 */
+
+    const name = ref('mario')
+    const age = ref(30)
 
     const handleClick = () => {
-      console.log('in handleClick: ', para, para.value)
-      para.value.classList.add('test')
-      para.value.textContent = 'this now is different on click'
+      name.value = 'luigi'
+      age.value = 42
     }
 
     return {
       name: name,
       age: age,
       handleClick,
-      para,
     }
   },
 }
