@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the blog (click me)",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione fuga porro hic quasi voluptatem! Incidunt, itaque numquam. Corporis, sint recusandae consequatur at qui nisi officiis dolor laudantium eaque nemo a dolorem consequuntur nulla fugiat consectetur sapiente ex ratione laboriosam facere earum repellat expedita. Tenetur in nemo pariatur laboriosam. Maiores minima repellendus ipsa officia assumenda, perferendis nisi quos sed, blanditiis laborum explicabo at voluptatum dolor architecto nostrum omnis. Ullam dolorem quam soluta, veniam, vel perferendis repellendus sequi facere officiis cupiditate aperiam beatae quas modi ipsam ipsa qui dolorum repellat, quos nesciunt velit! Quia consequatur placeat repellendus fugiat possimus ea unde?",
+      "tags": [
+        "coding",
+        "news",
+        "webdev"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "top 5 css tips (click me)",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolores suscipit mollitia blanditiis molestiae deleniti debitis, ducimus esse sequi exercitationem atque delectus dolorem sit! Beatae soluta mollitia ex hic nostrum voluptatum magni, voluptatibus at error cupiditate eius minus? Nulla ratione harum minima ipsa exercitationem dolore officia quos hic delectus! Quibusdam, error repudiandae inventore cupiditate consequatur doloribus beatae nesciunt illum, iusto eius placeat odit. Suscipit explicabo a esse facere aut laudantium ex, voluptatibus debitis quam inventore maxime quibusdam sapiente et dolores, tempora molestiae! Fugiat consequatur repellendus ratione nisi eum recusandae? Similique velit dolorum voluptas, ad earum, a non error iste repellendus in neque quos reiciendis excepturi iure architecto exercitationem eligendi quidem tenetur corporis nisi? Cum, cupiditate! Necessitatibus, illum mollitia quia nam impedit aperiam rerum asperiores nihil magni voluptates non, voluptate doloribus quod. Voluptas nisi quis dolore, debitis atque illo vero! Dicta odio accusamus porro ullam, optio saepe incidunt quod eaque libero.",
+      "tags": [
+        "coding",
+        "css",
+        "webdev"
+      ]
+    }
+  ]
+}
